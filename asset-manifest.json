@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/PigPenguinMan/React_Shop/static/css/main.6b9316f0.css",
+    "main.js": "/PigPenguinMan/React_Shop/static/js/main.9bd134c4.js",
+    "static/js/787.7f074b92.chunk.js": "/PigPenguinMan/React_Shop/static/js/787.7f074b92.chunk.js",
+    "static/media/1-2.jpg": "/PigPenguinMan/React_Shop/static/media/1-2.9526f621c835e2dfb687.jpg",
+    "static/media/1.jpg": "/PigPenguinMan/React_Shop/static/media/1.11489b1201f17706ea56.jpg",
+    "static/media/slick.svg": "/PigPenguinMan/React_Shop/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/PigPenguinMan/React_Shop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/PigPenguinMan/React_Shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/PigPenguinMan/React_Shop/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/PigPenguinMan/React_Shop/index.html",
+    "main.6b9316f0.css.map": "/PigPenguinMan/React_Shop/static/css/main.6b9316f0.css.map",
+    "main.9bd134c4.js.map": "/PigPenguinMan/React_Shop/static/js/main.9bd134c4.js.map",
+    "787.7f074b92.chunk.js.map": "/PigPenguinMan/React_Shop/static/js/787.7f074b92.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b9316f0.css",
+    "static/js/main.9bd134c4.js"
+  ]
+}
