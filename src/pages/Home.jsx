@@ -29,7 +29,7 @@ const Home = () => {
     return (
         <div>
             <Container>
-                <Row className="mt-3">
+                <Row >
                     <Col className="px-5">
                         <Slider {...settings}>
                             {state.productList.map((product)=>(

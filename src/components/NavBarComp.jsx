@@ -21,7 +21,7 @@ const NavBarComp = () => {
     // 컴포넌트가 마운트 되자마자 로그인정보 확인 
     useEffect(() => {
         setLogin(data.state.user ? true : false)
-    },[])
+    },[data.state.user]) // 새로 로그인을 했을때 화면이 바뀌게 설정 
 
     // Logout을 위한 이벤트 함수 
     const logOut = () => {
@@ -53,7 +53,7 @@ const NavBarComp = () => {
                         ) : (
                             <Nav>
                                 {/* 로그인이 되지않았을때 출력될 컴포넌트 */}
-                                <Button variant="outline-light">Login</Button>{' '}
+                                <Button variant="outline-light" onClick={()=>{navigate('/loginform')}}>Login</Button>{' '}
                             </Nav>
                         )}
                     </Navbar.Collapse>

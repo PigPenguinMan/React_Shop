@@ -13,29 +13,50 @@ const DataProvider = ({children}) =>{
     // 유저 정보 {name :"이재용", profile:사진 ,likelist :[]} 
     const [user,setUser] = useState({name :"희성", profile:null ,likelist :[]});
     
+
     // 상품 정보 : 상품배열로 들어감  
     const [productList ,setProductList] = useState([
         {
             productId : 1,
             productName : "책",
             productDetail : "리액트를 알려주는 책입니다",
-            productColor : ["white","black"],
-            productPicture : "1.jpg"
+            productColor : ["dimgray","black"],
+            productPicture : ["1.jpg","1-2.jpg"]
         },
         {
             productId : 2,
             productName : "책2",
             productDetail : "리액트를 알려주는 책입니다",
             productColor : ["black","dimgray"],
-            productPicture : "1.jpg"
+            productPicture : ["1.jpg"]
         }
+
     ])
+
     // 댓글 정보 
+    const [allComments,setAllComment] = useState([
+        {
+            commentId : 1, 
+            productId : 1, 
+            name : "yellow",
+            text : "좋은 책입니다"
+        },
+        {
+            commentId : 2, 
+            productId : 1, 
+            name : "blue",
+            text : "괜찮습니다"
+        },
+    ])
+    
+    
+    // useState사용하지 않은 변수는 리액트 업데이트를 일으키지 않는다 
+    let commentCount = 3 ;
 
     // 사용할 value 값을 state와 action으로 분리해서 넣어둠 
     const value = { 
-        state : {user, productList},
-        action : {setUser , setProductList},
+        state : {user, productList,allComments,commentCount},
+        action : {setUser , setProductList,setAllComment},
     }
     // DataProvider를 사용할때 DataContext.Provider를 사용할수 있도록 함 
     // 이때 children은 Provider를 쓸때 데이터를 공용으로 쓰는 컴포넌트들 
